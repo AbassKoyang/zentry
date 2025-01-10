@@ -21,9 +21,7 @@ const Hero = () => {
 
   const handleMiniVideoClick = () : void => {
     setHasClicked(true);
-
     setCurrentIndex(upcomingVideo);
-
   }
 
   const handleVideoLoad = () : void => {
@@ -94,6 +92,26 @@ useGSAP(() => {
     }
   })
 })
+
+useGSAP(() => {
+  gsap.set(`#hero-animated-text-${currentIndex}`, {
+    x: -300,
+    y: -200, 
+    rotation: 220,
+    opacity: 0
+  });
+
+  // Animate to final state
+  gsap.to(`#hero-animated-text-${currentIndex}`, {
+    x: 0,
+    y: 0,
+    rotation: 0,
+    opacity: 1,
+    duration: 1.5,
+    ease: "elastic.out(1, 0.3)"
+  });
+}, {dependencies: [currentIndex]})
+
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden'>
 
@@ -110,7 +128,7 @@ useGSAP(() => {
 
             <div>
 
-                <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
+                <div className="mask-clip-path absolute-center absolute z-50 size-32 lg:size-64 cursor-pointer overflow-hidden rounded-lg">
                   <div onClick={handleMiniVideoClick} className='origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100'>
                     <video 
                     src={getVideoSrc(upcomingVideo)} 
@@ -118,7 +136,7 @@ useGSAP(() => {
                     loop
                     muted
                     id='current-video'
-                    className='size-64 origin-center scale-150 object-cover object-center'
+                    className='size-32 lg:size-64 origin-center scale-150 object-cover object-center'
                     onLoadedData={handleVideoLoad}
                     />
                   </div>
@@ -145,37 +163,37 @@ useGSAP(() => {
 
             </div>
 
-            <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+            <h1 className='hidden lg:block special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
               G<b>a</b>ming <br />
             </h1>
 
             <div className="absolute top-0 left-0 size-full z-40">
-              <div className="mt-24 px-5 sm:px-10">
+              <div className="mt-16 sm:mt-24 px-5 sm:px-10">
                 <h1 className="special-font hero-heading text-blue-100">
                   Redefi<b>n</b>e
                 </h1>
                 {currentIndex === 1 && (
-                  <h1 className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
+                  <h1 id='hero-animated-text-1' className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
                   G<b>a</b>ming
                 </h1>
                 )}
                 {currentIndex === 2 && (
-                  <h1 className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
+                  <h1 id='hero-animated-text-2' className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
                   Ide<b>n</b>tity
                 </h1>
                 )}
                 {currentIndex === 3 && (
-                  <h1 className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
+                  <h1 id='hero-animated-text-3' className="pl-10 special-font hero-heading text-blue-100 lg:hidden">
                   Re<b>a</b>lity
                 </h1>
                 )}
                 {currentIndex === 4 && (
-                  <h1 className="special-font hero-heading text-blue-100 lg:hidden">
+                  <h1 id='hero-animated-text-4' className="special-font hero-heading text-blue-100 lg:hidden">
                   Ag<b>e</b>ntic AI
                 </h1>
                 )}
-                <p className="mb-5 max-w-64 font-robert-regular text-blue-100">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
-                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow/>} containerClass='bg-yellow-300 flex-center gap-1' />
+                <p className="hidden lg:block mb-5 max-w-64 font-robert-regular text-blue-100">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
+                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow/>} containerClass='hidden bg-yellow-300 lg:flex justify-center items-center gap-1' />
               </div>
             </div>
     
@@ -184,6 +202,11 @@ useGSAP(() => {
         <h1 className='special-font hero-heading absolute bottom-5 right-5 text-black'>
           G<b>a</b>ming
         </h1>
+
+        <div className='lg:hidden absolute bottom-0 left-0 w-full flex justify-between items-center px-5 z-10 mb-5'>
+          <p className="max-w-64 font-robert-regular text-blue-100 text-xs">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
+          <Button id='watch-trailer-2' title='Trailer' leftIcon={<TiLocationArrow/>} containerClass='bg-yellow-300 flex-center gap-1' />
+        </div>
         
     </div>
   )
