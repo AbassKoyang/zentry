@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react'
+import {useRef, useState, useEffect} from 'react'
 import Button from './Button';
 import {TiLocationArrow} from 'react-icons/ti';
 import gsap from 'gsap';
@@ -12,7 +12,7 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [loadedVideos, setLoadedVideos] = useState<number>(0);
 
-  const nextVideoRef = useRef(null);
+  const nextVideoRef = useRef<HTMLVideoElement | null>(null);
 
   const totalVideos = 4;
 
@@ -62,7 +62,9 @@ useGSAP(()=>{
     height: '100%',
     duration: 1,
     ease: 'power1.inOut',
-    onStart: () => nextVideoRef.current.play(),
+    onStart: () => {
+      nextVideoRef.current?.play().catch(() => {});
+    },
   });
 
   gsap.from('#current-video', {
