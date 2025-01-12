@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from './Button'
+import { TiLocationArrow } from 'react-icons/ti';
 type BentoCardType = {
     src: string;
     title: React.ReactNode;
@@ -19,11 +21,16 @@ const BentoCard = ({src, title, description, isComingSoon} : BentoCardType) => {
             <div className=''>
                 <h1 className='bento-title special-font'>{title}</h1>
                 {description && (
-                    <p className='mt-3 max-w-64 text-xs md:text-base'>{description}</p>
+                    <p className='mt-3 max-w-72 text-xs md:text-base'>{description}</p>
                 )}
             </div>
             {isComingSoon && (
-                <button className='rounded-xl px-4 py-3 text-blue-50 border-hsla'>Coming Soon</button>
+                <Button
+                id='coming-soon-button'
+                    title='Comin Soon'
+                    leftIcon={<TiLocationArrow className='text-blue-50/50' />}
+                    containerClass='border-hsla bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1'
+                />
             )}
         </div>
     </div>
