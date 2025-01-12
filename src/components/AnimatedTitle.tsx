@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedTitle = ({title, containerClass} : {title: string, containerClass: string}) => {
+const AnimatedTitle = ({title, containerClass, sectionId} : {title: string; containerClass: string; sectionId: string}) => {
     const containerRef = useRef(null)
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -27,7 +27,7 @@ const AnimatedTitle = ({title, containerClass} : {title: string, containerClass:
         return () => ctx.revert();
     },[])
     return (
-        <div ref={containerRef} className={`animated-title ${containerClass}`}>
+        <div id={sectionId} ref={containerRef} className={`animated-title ${containerClass}`}>
             {title.split('<br />').map((line, index) => (
                 <div key={index} className='flex-center max-w-full flex-wrap gap-2 px:10 md:gap-3'>
                     {line.split(' ').map((word, i) => (

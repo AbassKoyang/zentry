@@ -1,8 +1,8 @@
 import { TiLocationArrow } from "react-icons/ti";
 import BentoCard from "./BentoCard";
-import { MouseEvent, useRef, useState } from "react";
+import {ReactNode, MouseEvent, useRef, useState } from "react";
 
-const BentoTilt = ({children, className = ''}) => {
+const BentoTilt = ({children, className = ''} : {children: ReactNode; className: string;}) => {
     const [transformStyle, settransformStyle] = useState<string>('');
     const itemRef = useRef<HTMLDivElement | null>(null);
 
@@ -23,7 +23,7 @@ const BentoTilt = ({children, className = ''}) => {
         settransformStyle(newTransform);
     }
     const handleMouseLeave = () => {
-
+        settransformStyle('');
     }
     return(
         <div onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove} style={{transform: transformStyle}} ref={itemRef} className={className}>{children}</div>
