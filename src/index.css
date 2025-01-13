@@ -67,19 +67,17 @@ body {
     font-family: "Zentry";
     font-feature-settings: "ss01" on;
   }
-.test-clip-path{
-  transform: translate3d(0.16px, 10.8684px, 0px) rotateX(0rad) rotateY(0rad) rotateZ(0rad) scale(1.2);
-}
+
   .hero-heading {
     @apply uppercase font-zentry font-black text-8xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
   }
 
   .about-subtext {
-    @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
+    @apply absolute bottom-[-80dvh] md:bottom-[-85dvh] left-1/2 w-full max-w-xs -translate-x-1/2 text-center font-circular-web text-sm md:text-lg md:max-w-[34rem];
   }
 
   .about-image {
-    @apply absolute left-1/2 top-0 z-20 h-[60vh] w-80 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+    @apply absolute left-1/2 top-0 z-20 h-[50vh] md:h-[60vh] w-60 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
   }
 
   .animated-title {
