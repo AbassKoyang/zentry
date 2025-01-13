@@ -27,9 +27,9 @@ const BentoCard = ({src, title, description, isComingSoon} : BentoCardType) => {
             {isComingSoon && (
                 <Button
                 id='coming-soon-button'
-                    title='Comin Soon'
+                    title='Coming Soon'
                     leftIcon={<TiLocationArrow className='text-blue-50/50' />}
-                    containerClass='border-hsla bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1'
+                    containerClass='border-hsla !bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1'
                 />
             )}
         </div>
