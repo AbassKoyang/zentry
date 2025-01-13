@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import Button from "./Button";
 
 const Story = () => {
-    const frameRef = useRef<HTMLDivElement | null>(null);
+    const frameRef = useRef<HTMLImageElement | null>(null);
     function handleMouseLeave(){
         if(!frameRef.current) return;
         gsap.to(frameRef.current, {
