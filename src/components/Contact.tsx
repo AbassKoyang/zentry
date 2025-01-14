@@ -28,7 +28,7 @@ const Contact = () => {
                     <p className="special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]">
                         Let's b<b>u</b>ild the<br /> new era of<br /> g<b>a</b>ming t<b>o</b>gether
                     </p>
-                    <Button id='contact-us-button' title='Contact Us' containerClass='mt-10 cursor-pointer' />
+                    <Button id='contact-us-button' title='Contact Us' containerClass='mt-10 cursor-pointer text-xs' />
                 </div>
             </div>
         </div>

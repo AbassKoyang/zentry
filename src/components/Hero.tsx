@@ -130,7 +130,7 @@ useGSAP(() => {
 
             <div>
 
-                <div className="mask-clip-path absolute-center absolute z-50 size-32 lg:size-64 cursor-pointer overflow-hidden rounded-lg">
+                <div className="mask-clip-path absolute top-[60%] md:top-1/2 left-1/2 translate-x-[-50%] translate-y-[-60%] md:translate-y-[-50%] z-50 size-32 lg:size-64 cursor-pointer overflow-hidden rounded-lg">
                   <div onClick={handleMiniVideoClick} className='origin-center md:scale-50 scale-100 opacity-100 md:opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100 animation-pulse'>
                     <video 
                     src={getVideoSrc(upcomingVideo)} 
@@ -170,7 +170,7 @@ useGSAP(() => {
             </h1>
 
             <div className="absolute top-0 left-0 size-full z-40">
-              <div className="mt-16 sm:mt-24 px-5 sm:px-10">
+              <div className="mt-24 sm:mt-24 px-5 sm:px-10">
                 <h1 className="special-font hero-heading text-blue-100">
                   Redefi<b>n</b>e
                 </h1>
@@ -195,7 +195,7 @@ useGSAP(() => {
                 </h1>
                 )}
                 <p className="hidden lg:block mb-5 max-w-64 font-robert-regular text-blue-100">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
-                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow/>} containerClass='hidden bg-yellow-300 lg:flex justify-center items-center gap-1' />
+                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow/>} containerClass='hidden bg-yellow-300 lg:flex justify-center items-center gap-1 text-xs' />
               </div>
             </div>
     
@@ -207,7 +207,7 @@ useGSAP(() => {
 
         <div className='lg:hidden absolute bottom-0 left-0 w-full flex justify-between items-center px-5 z-10 mb-5'>
           <p className="max-w-64 font-robert-regular text-blue-100 text-xs">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
-          <Button id='watch-trailer-2' title='Trailer' leftIcon={<TiLocationArrow/>} containerClass='bg-yellow-300 flex-center gap-1' />
+          <Button id='watch-trailer-2' title='Trailer' leftIcon={<TiLocationArrow/>} containerClass='bg-yellow-300 flex-center gap-1 text-xs py-[8px] px-3' />
         </div>
         
     </div>

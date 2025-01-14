@@ -29,7 +29,7 @@ const BentoCard = ({src, title, description, isComingSoon} : BentoCardType) => {
                 id='coming-soon-button'
                     title='Coming Soon'
                     leftIcon={<TiLocationArrow className='text-blue-50/50' />}
-                    containerClass='border-hsla !bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1'
+                    containerClass='border-hsla !bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1 text-xs'
                 />
             )}
         </div>
