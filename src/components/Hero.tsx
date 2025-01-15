@@ -195,7 +195,7 @@ useGSAP(() => {
                 </h1>
                 )}
                 <p className="hidden lg:block mb-5 max-w-64 font-robert-regular text-blue-100">Enter the Meta Game Layer <br/> Unleash the Play Economy</p>
-                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow/>} containerClass='hidden bg-yellow-300 lg:flex justify-center items-center gap-1 text-xs' />
+                <Button id='watch-trailer' title='Watch Trailer' leftIcon={<TiLocationArrow className='rotate-[40deg] !text-[16px]'/>} containerClass='hidden bg-yellow-300 lg:flex justify-center items-center gap-1 py-2.5 px-5 text-[10px] font-medium' />
               </div>
             </div>
     

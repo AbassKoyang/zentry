@@ -21,15 +21,15 @@ const BentoCard = ({src, title, description, isComingSoon} : BentoCardType) => {
             <div className=''>
                 <h1 className='bento-title special-font'>{title}</h1>
                 {description && (
-                    <p className='mt-3 max-w-72 text-xs md:text-base'>{description}</p>
+                    <p className='mt-3 max-w-xs text-xs md:text-sm font-medium'>{description}</p>
                 )}
             </div>
             {isComingSoon && (
                 <Button
                 id='coming-soon-button'
                     title='Coming Soon'
-                    leftIcon={<TiLocationArrow className='text-blue-50/50' />}
-                    containerClass='border-hsla !bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1 text-xs'
+                    leftIcon={<TiLocationArrow className='text-blue-50/50 text-[14px]' />}
+                    containerClass='border-hsla !bg-black !text-blue-50/50 md:flex hidden items-center justify-center gap-1 py-2 px-5 text-[8px] font-medium'
                 />
             )}
         </div>

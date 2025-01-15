@@ -25,10 +25,10 @@ const Contact = () => {
             <div className="flex flex-col items-center text-center">
                 <div className="font-general text-[10px] uppercase">
                     <p>Join Zentry</p>
-                    <p className="special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]">
+                    <p className="special-font mt-10 w-full font-zentry text-4xl leading-[0.9] md:text-[5.5rem]">
                         Let's b<b>u</b>ild the<br /> new era of<br /> g<b>a</b>ming t<b>o</b>gether
                     </p>
-                    <Button id='contact-us-button' title='Contact Us' containerClass='mt-10 cursor-pointer text-xs' />
+                    <Button id='contact-us-button' title='Contact Us' containerClass='mt-10 cursor-pointer px-4 py-2 lg:py-2 lg:px-5 text-[10px] font-medium' />
                 </div>
             </div>
         </div>

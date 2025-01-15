@@ -109,12 +109,12 @@ return(
                     id='product-button'
                     title='Products'
                     rightIcon={<TiLocationArrow className='rotate-[140deg] lg:rotate-0 text-[10px] lg:text-normal' />}
-                    containerClass={`${isNavOpen ? '!bg-black text-blue-50' : 'bg-blue-50 text-black'} items-center justify-center flex flex-row gap-1 py-[4px] px-3 lg:py-2 lg:px-5 text-[10px] font-medium md:text-xs`}
+                    containerClass={`${isNavOpen ? '!bg-black text-blue-50' : 'bg-blue-50 text-black'} items-center justify-center flex flex-row gap-1 py-[4px] px-3 lg:py-[6px] lg:px-4 text-[10px] font-medium md:text-[10px]`}
                     />
                     <Button
                     id='whitepaper-button'
                     title='Whitepaper'
-                    containerClass={`${isNavOpen ? '!bg-black text-blue-50' : 'bg-blue-50 text-black'} items-center justify-center px-3 py-[4px] lg:py-2 lg:px-5 text-[10px] font-medium md:text-xs`}
+                    containerClass={`${isNavOpen ? '!bg-black text-blue-50' : 'bg-blue-50 text-black'} items-center justify-center px-3 py-[4px] lg:py-[6px] lg:px-4 text-[10px] font-medium md:text-[10px]`}
                     />
                     </div>
                 </div>
