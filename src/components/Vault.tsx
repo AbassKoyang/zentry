@@ -3,6 +3,7 @@ import Button from './Button';
 import gsap from 'gsap';
 import {useGSAP} from '@gsap/react';
 import {ScrollTrigger} from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 const Vault = () => {
     const [accordion, setAccordion] = useState<string>('');
     useGSAP(() => {

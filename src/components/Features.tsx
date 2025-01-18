@@ -1,4 +1,3 @@
-import { TiLocationArrow } from "react-icons/ti";
 import BentoCard from "./BentoCard";
 import {ReactNode, MouseEvent, useRef, useState } from "react";
 import gsap from "gsap";
