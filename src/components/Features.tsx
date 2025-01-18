@@ -17,7 +17,7 @@ const BentoTilt = ({children, className = '', id} : {children: ReactNode; classN
             y: 200,
             scrollTrigger: {
                 trigger: `#${id}`,
-                start: '100 bottom',
+                start: '70 bottom',
                     end: 'center bottom',
                     toggleActions: 'play none none reverse'
             },
