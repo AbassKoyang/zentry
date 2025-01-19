@@ -4,7 +4,7 @@ import {ScrollTrigger} from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 import Button from "./Button";
 
-const AnimatedBox = ({src}) => {
+const AnimatedBox = ({src} : {src: string;}) => {
     return(
     <div className='size-7 md:size-10 rounded-xs md:rounded-md bg-transparent transition-all duration-500 ease-in-out relative animate-bounce hover:animate-none'>
         <div className='z-[1000] animated-box group size-full bg-black overflow-hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md bg-black hover:size-[100px] lg:hover:size-[300px] transition-all duration-500 ease-in-out origin-center'>
