@@ -6,8 +6,8 @@ import Button from "./Button";
 
 const AnimatedBox = ({src} : {src: string;}) => {
     return(
-    <div className='size-7 md:size-10 rounded-xs md:rounded-md bg-transparent transition-all duration-500 ease-in-out relative animate-bounce hover:animate-none'>
-        <div className='z-[1000] animated-box group size-full bg-black overflow-hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md bg-black hover:size-[100px] lg:hover:size-[300px] transition-all duration-500 ease-in-out origin-center'>
+    <div className='size-6 md:size-10 rounded-sm md:rounded-md bg-transparent transition-all duration-500 ease-in-out relative animate-bounce hover:animate-none'>
+        <div className='z-[1000] animated-box group size-full bg-black overflow-hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-sm md:rounded-md bg-black hover:size-[100px] lg:hover:size-[300px] transition-all duration-500 ease-in-out origin-center'>
             <img src={src} className='size-full object-center object-fit scale-150 opacity-0 group-hover:scale-100 group-hover:opacity-100' />
         </div>
     </div>)
@@ -57,7 +57,7 @@ const Discover = () => {
         <p className="font-general text-sm uppercase md:text-[10px]">
           who we are
         </p>
-        <div className='discover mt-10 text-black flex flex-center flex-col special-font font-zentry font-black text-6xl uppercase leading-[.8] sm:px-32 md:text-[6rem]'>
+        <div className='discover mt-10 text-black flex flex-center flex-col special-font font-zentry font-black text-5xl uppercase leading-[.8] sm:px-32 md:text-[6rem]'>
             <div className='animated-lines opacity-1'>
                 <h1 className='z-10'>We're b<b>u</b>ilding</h1>
             </div>
