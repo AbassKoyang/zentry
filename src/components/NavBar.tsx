@@ -135,7 +135,7 @@ return(
                         ))}
                     </button>
 
-                    <button className="flex flex-col gap-1 items-center justify-center lg:hidden" onClick={handleMenuButtonClick}>
+                    <button className="flex flex-col gap-1 items-center justify-center md:hidden" onClick={handleMenuButtonClick}>
                         <span className={`w-7 h-[2px] rounded-l ${isNavOpen ? 'rotate-[45deg] bg-black' : 'bg-blue-50'} transition-all duration-300 ease-in-out`}></span>
                         <span className={`w-7 h-[2px] rounded-l ${isNavOpen ? 'rotate-[-45deg] bg-black' : 'bg-blue-50'} transition-all duration-300 ease-in-out`}></span>
                     </button>

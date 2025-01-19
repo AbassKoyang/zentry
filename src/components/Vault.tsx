@@ -5,7 +5,7 @@ import {useGSAP} from '@gsap/react';
 import {ScrollTrigger} from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 const Vault = () => {
-    const [accordion, setAccordion] = useState<string>('');
+    const [accordion, setAccordion] = useState<string>('shaping');
     useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -29,7 +29,7 @@ const Vault = () => {
         })
     })
     return (
-        <section className={`px-10 pt-24 lg:pt-52 bg-yellow-300 min-h-screen flex items-center justify-between`}>
+        <section className={`px-10 py-24 lg:pt-52 bg-yellow-300 min-h-screen flex items-center justify-between`}>
             <div>
                 
             <h1 id='vault' className='special-font font-zentry font-black opacity-1 text-6xl uppercase leading-[.8] text-black  md:text-[6rem]'>The Univ<b>e</b>rse <br />Powered By Ze<b>n</b>t</h1>
@@ -43,7 +43,7 @@ const Vault = () => {
 
             <div className='mt-24 lg:mt-32'>
                 <div className=''>
-                    <button className={`flex items-center gap-7 ${accordion === 'shaping' ? 'text-black font-medium' : 'text-black/50 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('shaping')}>
+                    <button className={`flex items-center gap-7 ${accordion === 'shaping' ? 'text-black font-medium' : 'text-black/60 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('shaping')}>
                         <p className='text-[8px] font-general'>01</p>
                         <p className={`${accordion === 'shaping' ? 'text-lg' : 'text-[8px] uppercase'}`}>Shaping Zentry Collectively</p>
                     </button>
@@ -54,7 +54,7 @@ const Vault = () => {
                 </div>
 
                 <div className='mt-3'>
-                    <button className={`flex items-center gap-7 ${accordion === 'unlocking' ? 'text-black font-medium' : 'text-black/50 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('unlocking')}>
+                    <button className={`flex items-center gap-7 ${accordion === 'unlocking' ? 'text-black font-medium' : 'text-black/60 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('unlocking')}>
                         <p className='text-[8px] font-general'>02</p>
                         <p className={`${accordion === 'unlocking' ? 'text-lg' : 'text-[8px] uppercase'}`}>Unlocking Economic Opportunity</p>
                     </button>
@@ -65,7 +65,7 @@ const Vault = () => {
                 </div>
 
                 <div className='mt-3'>
-                    <button className={`flex items-center gap-7 ${accordion === 'sharing' ? 'text-black font-medium' : 'text-black/50 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('sharing')}>
+                    <button className={`flex items-center gap-7 ${accordion === 'sharing' ? 'text-black font-medium' : 'text-black/60 text-[8px] transition-all duration-300 ease-in-out'} font-circular-medium`} onClick={() => setAccordion('sharing')}>
                         <p className='text-[8px] font-general'>03</p>
                         <p className={`${accordion === 'sharing' ?  'text-lg' : 'text-[8px] uppercase'}`}>Sharing Value Accrued</p>
                     </button>
