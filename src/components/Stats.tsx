@@ -2,6 +2,7 @@ import AnimatedText from "./AnimatedText";
 import gsap from 'gsap';
 import {useGSAP} from '@gsap/react';
 import {ScrollTrigger} from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 const Stats = () => {
     useGSAP(() => {
         const tl = gsap.timeline({
