@@ -8,6 +8,7 @@ import Story from './components/Story';
 import Vault from './components/Vault';
 import Discover from './components/Discover';
 import Stats from './components/Stats';
+import Partners from './components/Partners';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Vault />
       <Discover />
       <Stats />
+      <Partners />
     </main>
   )
 }

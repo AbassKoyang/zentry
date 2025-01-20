@@ -16,7 +16,7 @@ const AnimatedText = ({text, containerClass}:{text: string; containerClass?: str
                 }
             })
 
-            tl.from('.animated-text', {
+            tl.from(textRef.current, {
                 opacity: 0,
                 ease: 'power2.inOut',
                 stagger: {

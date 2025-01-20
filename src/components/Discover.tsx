@@ -48,9 +48,9 @@ const Discover = () => {
     },[])
 
   return (
-    <section className='px-12 py-24 min-h-screen bg-blue-50 flex flex-center flex-col'>
+    <section className='px-12 py-24 w-screen min-h-screen bg-blue-50 flex flex-center flex-col'>
           <AnimatedText text='who we are' />
-        <div className='discover mt-10 text-black flex flex-center flex-col special-font font-zentry font-black text-5xl uppercase leading-[.8] sm:px-32 md:text-[6rem]'>
+        <div className='min-w-[300px] discover mt-10 text-black flex items-center justify-center flex-col special-font font-zentry font-black text-5xl uppercase leading-[.8] sm:px-32 md:text-[6rem]'>
             <div className='animated-lines opacity-1'>
                 <h1 className='z-10'>We're b<b>u</b>ilding</h1>
             </div>
