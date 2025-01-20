@@ -8,76 +8,76 @@ const Partners = () => {
                 <p><b className='text-blue-50'>Our backers </b>include top-tier VCs, funds and companies, providing expertise, network and resources to fuel our project's success.</p>
             </div>
             <div className=''>
-                <h1 className='md:ml-14 text-yellow-300 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>Our Partners</h1>
+                <h1 className='ml-14 md:ml-14 text-yellow-300 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>Our Partners</h1>
 
-                <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>binance labs</h1>
+                <div className='flex items-start gap-4 mt-3 md:mt-1'>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>binance labs</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>Coinbase Ventures</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>Coinbase Ventures</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>pantera capital</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>pantera capital</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>pantera capital</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>pantera capital</h1>
                 </div>
                 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>defiance capital</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>defiance capital</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>animoca brands</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>animoca brands</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>skyvision capital</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>skyvision capital</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>play venture</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>play venture</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>backers</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>vessel capital</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>backers</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>vessel capital</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>gaming</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>Marblex</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>gaming</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>Marblex</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>gaming</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>Fnatic</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>gaming</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>Fnatic</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>gaming</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>Xset</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>gaming</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>Xset</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>web3</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>jambo</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>web3</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>jambo</h1>
                 </div>
 
                 <div className='flex items-start gap-4 mt-1'>
-                    <p className='text-blue-50/30 font-general text-[10px] uppercase'>brands</p>
-                <h1 className='text-blue-50 special-font font-zentry text-5xl md:text-[4rem] uppercase leading-[0.8]'>aws</h1>
+                    <p className='text-blue-50/30 font-general text-[8px] md:text-[10px] uppercase'>brands</p>
+                <h1 className='text-blue-50 special-font font-zentry text-4xl md:text-[4rem] uppercase leading-[0.8]'>aws</h1>
                 </div>
             </div>
         </div>

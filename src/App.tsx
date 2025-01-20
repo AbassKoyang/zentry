@@ -3,8 +3,8 @@ import About from './components/About';
 import NavBar from './components/NavBar';
 import Features from './components/Features';
 import Story from './components/Story';
-// import Contact from './components/Contact';
-// import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Vault from './components/Vault';
 import Discover from './components/Discover';
 import Stats from './components/Stats';
@@ -18,12 +18,12 @@ const App = () => {
       <About />
       <Features />
       <Story />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
       <Vault />
       <Discover />
       <Stats />
       <Partners />
+      <Contact /> 
+      <Footer />
     </main>
   )
 }
