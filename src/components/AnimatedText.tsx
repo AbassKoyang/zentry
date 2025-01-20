@@ -32,7 +32,7 @@ const AnimatedText = ({text, containerClass}:{text: string; containerClass?: str
     return (
        <p className=''> {text.split(' ').map((word, index) => {
         return (
-            <span ref={textRef} class={`animated-text opacity-1 font-general text-sm uppercase md:text-[10px] text-black mr-1 ${containerClass}`} key={index}>{word}</span>
+            <span ref={textRef} className={`animated-text opacity-1 font-general text-sm uppercase md:text-[10px] text-black mr-1 ${containerClass}`} key={index}>{word}</span>
         )
     })}</p>
     )
