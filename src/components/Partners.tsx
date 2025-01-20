@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Partners = () => {
   return (
     <section className='mx-auto px-6 md:px-12 py-32 min-h-screen bg-black'>
