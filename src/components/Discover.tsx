@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 import Button from "./Button";
+import AnimatedText from "./AnimatedText";
 
 const AnimatedBox = ({src} : {src: string;}) => {
     return(
@@ -15,7 +16,7 @@ const AnimatedBox = ({src} : {src: string;}) => {
 const Discover = () => {
     useEffect(() => {
         const ctx = gsap.context(() => {
-            const titleAnimation = gsap.timeline({
+            const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.discover',
                     start: '200 bottom',
@@ -24,13 +25,7 @@ const Discover = () => {
                 }
             })
 
-            // titleAnimation.to('.discover-title', {
-            //     opacity: 1,
-            //     transform: 'translate3d(0,0,0) rotateY(0deg) rotateX(0deg)',
-            //     ease: 'power2.inOut',
-            //     duration: 1.5,
-            // })
-            titleAnimation.from('.animated-lines', {
+            tl.from('.animated-lines', {
                 y: 100,
                 opacity: 0,
                 stagger: {
@@ -38,14 +33,14 @@ const Discover = () => {
                 },
                 duration: 1,
             })
-            titleAnimation.from('#discover-subtext', {
+            tl.from('#discover-subtext', {
                 y: 50,
                 opacity: 0,
-                duration: 0.8,
+                duration: 0.4,
             })
-            titleAnimation.from('#discover-btn', {
+            tl.from('#discover-btn', {
                 opacity: 0,
-                duration: 0.8,
+                duration: 0.4,
             })
         });
 
@@ -54,9 +49,7 @@ const Discover = () => {
 
   return (
     <section className='px-12 py-24 min-h-screen bg-blue-50 flex flex-center flex-col'>
-        <p className="font-general text-sm uppercase md:text-[10px]">
-          who we are
-        </p>
+          <AnimatedText text='who we are' />
         <div className='discover mt-10 text-black flex flex-center flex-col special-font font-zentry font-black text-5xl uppercase leading-[.8] sm:px-32 md:text-[6rem]'>
             <div className='animated-lines opacity-1'>
                 <h1 className='z-10'>We're b<b>u</b>ilding</h1>

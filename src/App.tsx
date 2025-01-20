@@ -7,6 +7,7 @@ import Story from './components/Story';
 // import Footer from './components/Footer';
 import Vault from './components/Vault';
 import Discover from './components/Discover';
+import Stats from './components/Stats';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       {/* <Footer /> */}
       <Vault />
       <Discover />
+      <Stats />
     </main>
   )
 }
