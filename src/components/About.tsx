@@ -28,7 +28,8 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen">
+    <div id="about" className="min-h-screen w-screen bg-blue-50 flex justify-center">
+      <div className='w-full max-w-[1400px]'>
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
           Welcome to Zentry
@@ -49,7 +50,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="h-dvh w-screen" id="clip">
+      <div className="h-dvh w-full" id="clip">
         <div className="mask-clip-path about-image">
           <img
             src="img/about.webp"
@@ -57,6 +58,7 @@ const About = () => {
             className="absolute left-0 top-0 size-full object-cover"
           />
         </div>
+      </div>
       </div>
     </div>
   );

@@ -89,7 +89,8 @@ const Stats = () => {
         })
     })
   return (
-    <section className='px-6 md:px-12 py-24 min-h-screen bg-black'>
+    <section className='px-6 md:px-12 py-24 min-h-screen bg-black flex justify-center'>
+        <div className='w-full max-w-[1400px]'>
         <div className='flex flex-col text-center md:text-left flex-center md:block'>
             <AnimatedText text='our universe in a nutshell' containerClass='!text-blue-50' />
             <h1 id='glance' className='opacity-1 mt-5 special-font font-zentry text-6xl uppercase leading-[.8] text-blue-50 md:text-[6rem]'>
@@ -97,7 +98,7 @@ const Stats = () => {
             </h1>
         </div>
 
-        <div className='w-full h-[200vh] md:h-[230vh] flex items-center justify-center mt-20'>
+        <div className='w-full h-[200vh] md:h-[230vh] max-h-[1250px] flex items-center justify-center mt-20'>
             <div className='size-full max-w-4xl grid grid-rows-8 md:grid-rows-4 grid-cols-1 md:grid-cols-2 gap-7'>
 
                 <div className='stats-card-1 opacity-1 col-span-1 row-span-1 bg-black border-hsla rounded-lg ms-14 md:ms-0 md:mt-20 p-4 flex justify-end relative'>
@@ -152,7 +153,7 @@ const Stats = () => {
                     </div>
                 </div>
 
-                <div className='stats-card-5 opacity-1 col-span-1 row-span-1 bg-black border-hsla rounded-lg ms-32 md:me-32 p-4 relative'>
+                <div className='stats-card-5 opacity-1 col-span-1 row-span-1 bg-black border-hsla rounded-lg ms-32 md:ms-0 md:me-32 p-4 relative'>
                     <h1 className='uppercase special-font font-zentry text-black text-2xl md:text-[3.1rem] leading-[1] text-blue-50'>
                         W<b>o</b>rld-class b<b>a</b>ckers
                         <div className='w-full flex items-end flex-col md:gap-2 absolute bottom-3 right-3'>
@@ -175,6 +176,7 @@ const Stats = () => {
                     <h1 className='special-font font-zentry text-black text-[7rem] md:text-[14rem] leading-[0.8]'>40<b>M</b></h1>
                 </div>
             </div>
+        </div>
         </div>
     </section>
   )

@@ -1,8 +1,8 @@
 const Partners = () => {
   return (
-    <section className='mx-auto px-6 md:px-12 py-32 min-h-screen bg-black'>
+    <section className='mx-auto px-6 md:px-12 py-32 min-h-screen bg-black flex justify-center items-center'>
         <div className='flex flex-col md:flex-row items-start gap-16'>
-            <div className='text-white/70 text-sm max-w-sm md:mt-24 md:ml-24 sticky top-[0%]'>
+            <div className='text-white/70 text-sm max-w-sm'>
                 <p><b className='text-blue-50'>Our backers </b>include top-tier VCs, funds and companies, providing expertise, network and resources to fuel our project's success.</p>
             </div>
             <div className=''>

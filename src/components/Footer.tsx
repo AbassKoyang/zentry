@@ -10,7 +10,9 @@ const links : LinksType[] = [
     {href: 'https://github.com/abasskoyang', icon: <FaGithub/>},
     {href: 't.me/realabasskoyang', icon: <FaTelegram/>}
 ];
+
 const Footer = () => {
+    
   return (
     <footer className="w-screen bg-violet-300 py-4 text-black">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">

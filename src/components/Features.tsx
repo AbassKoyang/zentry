@@ -49,7 +49,8 @@ const BentoTilt = ({children, className = '', id} : {children: ReactNode; classN
 const Features = () => {
     
     return(
-        <section className="bg-black pb-52">
+        <section id='nexus' className="bg-black pb-52 flex justify-center">
+            <div className='w-full max-w-[1400px]'>
             <div className="container mx-auto px-3 md:px-10">
                 <div className="px-5 py-32">
                     <p className="font-circular-web text-[15.5px] text-blue-50">Explore the Zentry Universe</p>
@@ -63,7 +64,7 @@ const Features = () => {
                     title={<>radia<b>n</b>t</>}
                     />
                 </BentoTilt>
-                <div className="grid h-[135vh] md:h-[170vh] grid-cols-2 grid-rows-3 gap-7">
+                <div className="grid h-[135vh] md:h-[170vh] max-h-[1000px] grid-cols-2 grid-rows-3 gap-7">
                     <BentoTilt id='bento-card-2' className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
                     <BentoCard
                     src='/videos/feature-2.mp4'
@@ -90,7 +91,7 @@ const Features = () => {
                     </BentoTilt>
                     <BentoTilt id='bento-card-5' className="bento-tilt_2 opacity-1">
                         <div className="flex flex-col size-full justify-between bg-violet-300 p-5">
-                            <h1 className="bento-title special-font max-w-64 text-black">M<b>o</b>re Co<b>m</b>ing S<b>oo</b>n!</h1>
+                            <h1 className="bento-title special-font max-w-64 xl:max-w-xl text-black xl:text-[6rem]">M<b>o</b>re Co<b>m</b>ing S<b>oo</b>n!</h1>
                             <div className='mt-5 overflow-hidden w-12 h-12 self-end object-center'>
                             <img src='/img/zentry-symbol-black.png' className="scale-[1.5] object-cover" />
                             </div>
@@ -107,6 +108,7 @@ const Features = () => {
                     </BentoTilt>
 
                 </div>
+            </div>
             </div>
         </section>
     )

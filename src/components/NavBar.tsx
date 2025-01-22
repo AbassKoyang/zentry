@@ -145,33 +145,33 @@ return(
         </header>
         <div id='menu' className={`overflow-hidden fixed w-screen h-dvh bg-yellow-300 ${isNavOpen ? 'flex' : 'hidden'} flex-col justify-between z-20 p-4 lg:hidden`}>
                 <nav className='mt-16 flex flex-col justify-start'>
-                    <a className='menu-link flex items-start gap-5 opacity-100'>
+                    <a href='#'  className='menu-link flex items-start gap-5 opacity-100'>
                         <span className='font-general text-[8px]'>01</span>
                         <div className='flex items-end'>
                             <p className='text-7xl special-font font-zentry leading-0 uppercase'><b>N</b>EXUS</p>
                             <MdArrowForward className='rotate-[-45deg] mb-1 text-md'/>
                         </div>
                     </a>
-                    <a className='menu-link flex items-start gap-5 mt-3 opacity-100'>
+                    <a href='#'  className='menu-link flex items-start gap-5 mt-3 opacity-100'>
                         <span className='font-general text-[8px]'>02</span>
                         <div className='flex items-end'>
                             <p className='text-7xl special-font font-zentry leading-0 uppercase'>V<b>A</b>ULT</p>
                             <MdArrowForward className='rotate-[-45deg] mb-1 text-md'/>
                         </div>
                     </a>
-                    <a className='menu-link flex items-start gap-5 mt-3 opacity-100'>
+                    <a href='#'  className='menu-link flex items-start gap-5 mt-3 opacity-100'>
                         <span className='font-general text-[8px]'>03</span>
                         <div className='flex items-end'>
                             <p className='text-7xl special-font font-zentry leading-0 uppercase'>PR<b>0</b>LOGUE</p>
                         </div>
                     </a>
-                    <a className='menu-link flex items-start gap-5 mt-3 opacity-100'>
+                    <a  href='#' className='menu-link flex items-start gap-5 mt-3 opacity-100'>
                         <span className='font-general text-[8px]'>04</span>
                         <div className='flex items-end'>
                             <p className='text-7xl special-font font-zentry leading-0 uppercase'><b>A</b>BOUT</p>
                         </div>
                     </a>
-                    <a className='menu-link flex items-start gap-5 mt-3 opacity-100'>
+                    <a href='#'  className='menu-link flex items-start gap-5 mt-3 opacity-100'>
                         <span className='font-general text-[8px]'>05</span>
                         <div className='flex items-end'>
                             <p className='text-7xl special-font font-zentry leading-0 uppercase'>CONT<b>A</b>CT</p>

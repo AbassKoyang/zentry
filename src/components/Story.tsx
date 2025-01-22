@@ -37,7 +37,8 @@ const Story = () => {
         })
     }
   return (
-    <section className={`min-h-dvh w-screen bg-black text-blue-50`}>
+    <section id='prologue' className={`min-h-dvh w-screen bg-black text-blue-50 flex justify-center`}>
+      <div className='w-full max-w-[1400px]'>
       <div className="flex flex-col size-full items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">The multiversal ip world</p>
         <div className="relative size-full">
@@ -71,6 +72,7 @@ const Story = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     </section>
   )
